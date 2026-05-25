@@ -1,29 +1,28 @@
-# 🗺️ 学习路线图
+# 📚 学习笔记目录
 
-> 本文件是完整学习计划的索引入口，完整版本见：
-> `docs/superpowers/plans/2026-05-25-system-learning-plan.md`
+> **进度跟踪**请查看：[docs/superpowers/plans/2026-05-25-system-learning-plan.md](../docs/superpowers/plans/2026-05-25-system-learning-plan.md)
 
 ## 第1阶段：环境准备与 Python 基础
-- [x] **第1课**：项目概览与环境搭建 → [01-项目概览与环境搭建.md](01-项目概览与环境搭建.md)
-- [x] **环境搭建**：venv + 依赖安装 ✅（跳过 sentence-transformers/PyTorch，学到 RAG 时再装）
-- [x] **第2课**：Python 核心语法速通（面向 Java 开发者） → [02-Python核心语法速通.md](02-Python核心语法速通.md)
+
+| # | 笔记 | 动手练习 |
+|:-|:----|:--------|
+| 1 | [项目概览与环境搭建](./01-项目概览与环境搭建.md) | — |
+| 2 | [Python 核心语法速通](./02-Python核心语法速通.md) | [syntax_comparison.py](../learning_challenges/syntax_comparison.py) |
+
+> 💡 环境搭建完成，已跳过 PyTorch/sentence-transformers（学到 RAG 时再装）
 
 ## 第2阶段：逐模块精读项目代码
-- [x] **第3课**：CLI 入口分析（cli.py） → [03-CLI入口分析.md](03-CLI入口分析.md)
-- [ ] **第4课**：意图识别智能体深度解析
-- [ ] **第5课**：协调器智能体深度解析
-- [ ] **第6课**：记忆系统深度解析
-- [ ] **第7课**：RAG 知识库深度解析
-- [ ] **第8课**：Skill 插件体系深度解析
-- [ ] **第9课**：稳定性保障深度解析
+
+| # | 笔记 |
+|:-|:----|
+| 3 | [CLI 入口分析](./03-CLI入口分析.md) |
 
 ## 第3阶段：动手改造练习
-- [ ] **第10课**：理解测试体系
-- [ ] **第11课**：动手改造（新增意图 / SQLite 存储 / TypeScript 改写）
+
+| # | 笔记 |
+|:-|:----|
 
 ## 第4阶段：独立项目
-- [ ] **第12课**：独立构建自己的 AI Agent
 
----
-
-> 💡 **每课包含**：📖 详细笔记 + 🧪 动手代码 + ✅ 验证步骤 + 💾 commit & push
+| # | 笔记 |
+|:-|:----|
