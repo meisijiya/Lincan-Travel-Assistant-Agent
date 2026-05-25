@@ -276,11 +276,11 @@ git push
 
 ## 阶段二：逐模块精读项目代码
 
-### 任务 2.1：入口分析 — `cli.py`
+### 任务 2.1：入口分析 — `cli.py` ✅
 
 **学习笔记输出：** `Learning/03-CLI入口分析.md`
 
-- [ ] **步骤：通读 `cli.py` 的类结构**
+- [x] **步骤：通读 `cli.py` 的类结构**
 
 读文件：`cli.py`（~750行）
 理解 `AligoCLI` 类的核心方法：
@@ -292,7 +292,7 @@ git push
 | `process_query` | 核心处理流程 | Controller 层 |
 | `run` | 事件循环 | while(true) 主循环 |
 
-- [ ] **步骤：深入 `initialize_system` 初始化流程**
+- [x] **步骤：深入 `initialize_system` 初始化流程**
 
 追踪初始化链路：
 ```
@@ -310,7 +310,7 @@ cli.py:initialize_system
 - 为什么 `IntentionAgent` 必须预加载？→ 因为它是「大脑」，每个请求都要用它
 - 为什么其他 Agent 用 `LazyAgentRegistry` 懒加载？→ 只有被调度到时才加载，启动快
 
-- [ ] **步骤：深入 `process_query` 核心处理流程**
+- [x] **步骤：深入 `process_query` 核心处理流程**
 
 追踪请求链路（**这是整项目的灵魂流程！**）：
 
@@ -344,11 +344,11 @@ process_query(user_input)
       └─ memory_manager.add_message()
 ```
 
-- [ ] **步骤：动手画流程图**
+- [x] **步骤：动手画流程图**
 
 用 Mermaid 或手绘方式画出 `process_query` 的完整调用链。
 
-- [ ] **步骤：撰写笔记并提交**
+- [x] **步骤：撰写笔记并提交**
 
 ```bash
 git add -A && git commit -m "docs: lesson 2.1 - CLI entry analysis"
