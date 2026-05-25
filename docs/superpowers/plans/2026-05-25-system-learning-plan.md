@@ -43,18 +43,18 @@
 
 ## 阶段一：环境就绪与快速热身
 
-### 任务 1.1：确认开发环境
+### 任务 1.1：确认开发环境 ✅
 
 **文件：** 无需修改，仅检查环境
 
-- [ ] **步骤：检查 Python 版本**
+- [x] **步骤：检查 Python 版本**
 
 ```bash
 python3 --version
 # 期望: Python 3.10+
 ```
 
-- [ ] **步骤：创建虚拟环境并安装依赖**
+- [x] **步骤：创建虚拟环境并安装依赖**
 
 ```bash
 cd /home/ljh2923/pi-projects/项目学习/travel-Agent/repo
@@ -65,7 +65,7 @@ pip install -r requirements.txt
 
 期望输出：所有包安装成功，无报错
 
-- [ ] **步骤：验证项目能启动（即使无 API 密钥）**
+- [x] **步骤：验证项目能启动（即使无 API 密钥）**
 
 ```bash
 python cli.py
@@ -73,7 +73,7 @@ python cli.py
 
 期望：看到 Rich 风格的 CLI 界面，提示输入 API 密钥或报错信息（`API_KEY` 占位符会报错，属于正常）
 
-- [ ] **步骤：提交并 push**
+- [x] **步骤：提交并 push**
 
 ```bash
 git add -A && git commit -m "docs: lesson 1.1 - dev environment ready"
@@ -82,13 +82,13 @@ git push
 
 ---
 
-### 任务 1.2：Python 核心语法速通（面向 Java 开发者）
+### 任务 1.2：Python 核心语法速通（面向 Java 开发者） ✅
 
 **学习笔记输出：** `Learning/02-Python核心语法速通.md`
 
 本任务是为**从 Java 转 Python** 的你量身定制。只学本项目用到的语法，不学无关内容。
 
-- [ ] **步骤：变量与类型（对比 Java）**
+- [x] **步骤：变量与类型（对比 Java）**
 
 ```python
 # Java:   String name = "张三";
@@ -109,7 +109,7 @@ data: dict[str, any] = {"出发地": "北京", "时间": "2026-03-11"}
 - `list` / `dict` 是内置的，不需要 import
 - 对比 Java 的 `ArrayList` / `HashMap`
 
-- [ ] **步骤：函数定义与类型注解**
+- [x] **步骤：函数定义与类型注解**
 
 ```python
 # Java: public String greet(String name) { return "Hello " + name; }
@@ -127,7 +127,7 @@ def process_query(user_input: str, max_tokens: int = 8192) -> dict:
 - `-> str` 是返回类型注解
 - f-string：`f"Hello {name}"` 替代 Java 的字符串拼接/`String.format`
 
-- [ ] **步骤：类与继承（本项目核心模式）**
+- [x] **步骤：类与继承（本项目核心模式）**
 
 ```python
 # 本项目大量使用 AgentBase 基类
@@ -147,7 +147,7 @@ class IntentionAgent(AgentBase):     # 继承 AgentBase
 - `super().__init__()` = Java 的 `super()`
 - `**kwargs` = 可变关键字参数（Java 中没有直接的等价物）
 
-- [ ] **步骤：async/await 异步编程（最核心！）**
+- [x] **步骤：async/await 异步编程（最核心！）**
 
 ```python
 # 本项目的灵魂——异步并发
@@ -180,7 +180,7 @@ asyncio.run(main())
 - `asyncio.gather()` = 并发执行多个任务（类似 Java 的 `CompletableFuture.allOf()`）
 - **本项目在 `orchestration_agent.py` 中用 `asyncio.gather()` 实现优先级并行调度**
 
-- [ ] **步骤：异常处理**
+- [x] **步骤：异常处理**
 
 ```python
 # Java: try { ... } catch (Exception e) { ... } finally { ... }
@@ -197,7 +197,7 @@ finally:
     cleanup()
 ```
 
-- [ ] **步骤：实现本节所学内容**
+- [x] **步骤：实现本节所学内容**
 
 **动手任务**：用 Python 写一个简单的「意图识别模拟器」
 
@@ -265,7 +265,7 @@ python learning_challenges/simple_intention.py
 # ...
 ```
 
-- [ ] **步骤：撰写笔记并提交**
+- [x] **步骤：撰写笔记并提交**
 
 ```bash
 git add -A && git commit -m "feat: lesson 1.2 - Python core syntax"
@@ -1090,9 +1090,9 @@ class IntentionAgent {
 ## 学习进度跟踪表
 
 ```
-第1阶段 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[ ] 任务 1.1：确认开发环境          ⏱ 30分钟
-[ ] 任务 1.2：Python 核心语法速通     ⏱ 2小时
+第1阶段 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ✅
+[x] 任务 1.1：确认开发环境          ⏱ 30分钟
+[x] 任务 1.2：Python 核心语法速通     ⏱ 2小时
 
 第2阶段 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 [ ] 任务 2.1：入口分析 — cli.py      ⏱ 1.5小时
